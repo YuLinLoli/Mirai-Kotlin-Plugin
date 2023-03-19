@@ -4,8 +4,6 @@ plugins {
     val kotlinVersion = "1.6.10"
     kotlin("jvm") version kotlinVersion
     kotlin("plugin.serialization") version kotlinVersion
-
-
     id("org.jetbrains.kotlin.plugin.noarg") version kotlinVersion
     id("org.jetbrains.kotlin.plugin.allopen") version kotlinVersion
     id("net.mamoe.mirai-console") version "2.14.0"
@@ -25,6 +23,7 @@ dependencies {
     implementation("org.jsoup:joup:1.15.4")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("net.mamoe:mirai-core-jvm:2.14.0")
+    implementation("top.jfunc.common:converter:1.8.0")
 
 
     implementation("com.madgag:animated-gif-lib:1.4")
