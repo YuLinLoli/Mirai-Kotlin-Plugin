@@ -8,11 +8,11 @@ import net.mamoe.mirai.event.events.GroupMessageEvent
 import net.mamoe.mirai.event.globalEventChannel
 
 
-object MiraiPlugin : KotlinPlugin(
+object KotlinPluginMain : KotlinPlugin(
     JvmPluginDescription(
-        id = "com.mirai.plugin（记得更改此处的插件id以及各种关于插件id的配置！）",
-        name = "插件名在这里写！！",
-        version = "1.0.0",
+        id = BuildConfig.id,
+        name = BuildConfig.name,
+        version = BuildConfig.version
     )
 ) {
 

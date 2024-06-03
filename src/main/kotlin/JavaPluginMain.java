@@ -1,5 +1,4 @@
-package java;
-
+import com.mirai.BuildConfig;
 import net.mamoe.mirai.console.plugin.jvm.JavaPlugin;
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescriptionBuilder;
 import net.mamoe.mirai.event.Event;
@@ -24,8 +23,8 @@ build.gradle.kts里改依赖库和插件版本
 public final class JavaPluginMain extends JavaPlugin {
     public static final JavaPluginMain INSTANCE = new JavaPluginMain();
     private JavaPluginMain() {
-        super(new JvmPluginDescriptionBuilder("com.mirai.plugin（记得更改此处的插件id以及各种关于插件id的配置！）", "0.1.0")
-                .info("EG")
+        super(new JvmPluginDescriptionBuilder(BuildConfig.id, BuildConfig.version)
+                .name(BuildConfig.name)
                 .build());
     }
 
